@@ -1,0 +1,249 @@
+/* .bg8 {
+  background: linear-gradient(#3a63d1, #6d91ff00, #3a63d1),
+    url("/src/assets/bgwork.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.workList_circle {
+  background: linear-gradient(180deg, #00f9ff 0%, #00f9ff 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+}
+.leftImg {
+  right: 20%;
+}
+.rightImg {
+  left: 20%;
+}
+.workList_img {
+  width: 4rem;
+}
+.workBlock_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.workBlock_title {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+}
+.workBlock_list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  width: 80%;
+}
+.workList_item {
+  background: linear-gradient(
+    180deg,
+    rgba(247, 71, 242, 0.8),
+    rgba(129, 4, 206, 0.8)
+  );
+  border-radius: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .workList_item > p {
+    font-size: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .workBlock_list {
+    width: 100%;
+  }
+  .leftImg {
+    right: 15%;
+  }
+  .rightImg {
+    left: 15%;
+  }
+  .workBlock_title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .workBlock_list {
+    width: 100%;
+  }
+  .workList_circle {
+    transform: scale(0.8);
+  }
+  .workList_item {
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 666px) {
+  .workBlock_list {
+    width: 100%;
+  }
+  .workList_circle {
+    transform: scale(0.8);
+  }
+  .workList_item {
+    height: 4rem;
+  }
+  .leftImg {
+    right: 10%;
+  }
+  .rightImg {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .workList_circle {
+    transform: scale(0.8);
+  }
+  .workList_item {
+    height: 5rem;
+  }
+  .itemRight {
+    justify-content: end !important;
+  }
+  .itemLeft {
+    justify-content: start !important;
+  }
+  .workList_item > p {
+    margin: 0;
+    width: 60%;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .workBlock_title {
+    font-size: 1.5rem;
+  }
+} */
+.workBlock_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.workBlock_list {
+  margin-top: 2rem;
+  width: 90%;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(1, 1fr);
+}
+.workList_item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  /* background: !important; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight: 600;
+}
+.workList_item_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  width: 20%;
+  height: 80%;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.workList_item_title {
+  width: 70%;
+  font-size: 1.5rem;
+}
+.workBlock_title{
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.item1 {
+  background-image: linear-gradient(
+      rgba(52, 143, 246, 0.6),
+      rgba(104, 39, 241, 0.6)
+    ),
+    url(/src/assets/workimg/depart.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item2 {
+  background-image: linear-gradient(
+      rgba(52, 143, 246, 0.6),
+      rgba(104, 39, 241, 0.6)
+    ),
+    url(/src/assets/workimg/fair.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item3 {
+  background-image: linear-gradient(
+      rgba(52, 143, 246, 0.6),
+      rgba(104, 39, 241, 0.6)
+    ),
+    url(/src/assets/workimg/concert.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .workList_item_text {
+    width: 40%;
+    height: 80%;
+  }
+  .workList_item_title {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .workList_item_text {
+    width: 60%;
+    height: 80%;
+  }
+  .workList_item_title {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .workList_item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .workList_item_text {
+    margin-top: 1rem;
+    width: 90%;
+    height: 80%;
+  }
+
+  .workList_item_title {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}

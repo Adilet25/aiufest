@@ -1,0 +1,230 @@
+.firstBlock_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 5rem; */
+  height: calc(100vh - 20rem);
+}
+.bg1 {
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.firstBlock_logo {
+  z-index: 2;
+  width: 40%;
+}
+.text_uppercase {
+  text-transform: uppercase;
+}
+.fs1 {
+  background: linear-gradient(90deg, #800bf5, #25c6f9);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.firstMain_text {
+  width: 80%;
+  font-family: "Russo One", sans-serif !important;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+  z-index: 3;
+}
+.firstMain_text > p {
+  width: 100%;
+}
+.firstMain_text > h2 {
+  width: 100%;
+  font-size: 2.5em;
+}
+#firstDate {
+  font-weight: 400;
+  font-size: 0.7em;
+}
+.secondBlock_org {
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 7rem;
+}
+.secondBlock_text {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+}
+
+.secondBlock_sponsors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.secondBlock_sponsors > img {
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.secondBlock_sponsors_text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.secondBlock_sponsors_text > p {
+  margin-bottom: 1rem;
+}
+.logobig {
+  width: 6rem !important;
+}
+.logopat2 {
+  width: 17rem !important;
+}
+.logopat {
+  width: 10rem !important;
+}
+.logobigb {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.logobigbb {
+  width: 9rem;
+}
+.logobigbb2 {
+  width: 9rem;
+}
+.logobigm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+}
+
+.mainBgColor {
+  position: absolute;
+  width: 99vw;
+  z-index: 1;
+}
+#dodo {
+  width: 10rem !important;
+}
+@media screen and (max-width: 1345px) {
+  .firstMain_text {
+    font-size: 2em;
+  }
+  .firstMain_text > p {
+    font-size: 1em;
+  }
+  .firstMain_text > h2 {
+    font-size: 2em;
+  }
+  #firstDate {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logobigbb {
+    width: 7rem;
+  }
+  .logobigbb2 {
+    width: 4rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .secondBlock_sponsors > img {
+    margin: 2rem;
+    /* flex-direction: column; */
+  }
+  .logopat,
+  .logopat2 {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logobigb {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  #dodo {
+    order: 3;
+  }
+  #mer {
+    order: 1;
+  }
+  #bakai {
+    order: 2;
+  }
+  .logobigbb,
+  .logobigbb2 {
+    margin: 0 auto;
+  }
+  .firstMain_text {
+    font-size: 2em;
+    width: 100%;
+  }
+  .firstMain_text > p {
+    font-size: 1em;
+  }
+  .firstMain_text > h2 {
+    font-size: 2em;
+  }
+  #firstDate {
+    font-size: 1em;
+  }
+  .firstBlock_main {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .bg1 {
+    background-size: cover;
+    background-position: center;
+  }
+  .firstBlock_logo {
+    width: 55%;
+  }
+  .secondBlock_sponsors {
+    flex-direction: column;
+  }
+  .secondBlock_sponsors_text {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .firstMain_text {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .firstBlock_logo {
+    width: 100%;
+  }
+  .logopat {
+    width: 6rem !important;
+  }
+  .logopat2 {
+    width: 10rem !important;
+  }
+  .firstBlock_main{
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .firstMain_text {
+    font-size: 1em;
+    width: 100%;
+  }
+}

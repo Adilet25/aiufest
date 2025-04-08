@@ -1,0 +1,139 @@
+.bg7 {
+  background: url("/src/assets/aboutbg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+.expoAbout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 90%;
+  padding: 3rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+.expoAbout_div {
+  width: 80%;
+  height: auto;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+}
+
+.expoAbout_div > p {
+  margin: 2rem !important;
+}
+.expoAbout_div > h2{
+  text-align: center;
+}
+.swiper-slide {
+  margin: 0 auto;
+}
+.expoAbout_div > h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.exp1 > p {
+  margin-bottom: 1rem;
+}
+.expoBtn {
+  border-radius: 56px;
+  width: auto;
+  padding: 0.6rem 1.5rem;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #2900ff;
+  color: white;
+  border: none;
+}
+.expTextBold {
+  font-weight: 700;
+}
+.exp3 {
+  line-height: 1.5rem;
+}
+
+.aboutImg {
+  position: absolute;
+  width: 6rem;
+}
+.aboutImg1 {
+  top: -2rem;
+  right: 0;
+}
+.aboutImg2 {
+  bottom: -2rem;
+  right: 0;
+}
+@media screen and (max-width: 1220px) {
+}
+@media screen and (max-width: 1024px) {
+  .expoAbout {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .exp2 {
+    padding-bottom: 2rem !important;
+    grid-row: 3 /3;
+  }
+  .bg7 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* @media screen and (max-width: 1024px) {
+  .expoAbout {
+    flex-direction: column;
+  }
+  .expoAbout_div {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+  .exp1,
+  .exp3 {
+    background: linear-gradient(
+      180deg,
+      rgba(135, 22, 202, 0.8) 0%,
+      rgba(42, 13, 138, 0.8) 100%
+    );
+    padding: 2rem 0;
+  }
+  .exp1 > p,
+  .exp3 > ul,
+  .exp2 > p {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .exp1 > p,
+  .exp2 > p {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  .exp3 > ul {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+} */
+@media screen and (max-width: 425px) {
+  .expoAbout_div > p {
+    margin: 1rem 0rem !important;
+  }
+  .expoAbout_div {
+    padding:2rem 1rem;
+  }
+} 

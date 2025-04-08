@@ -1,0 +1,224 @@
+.regBlockbg {
+  background-image: url("/src/assets/regBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  color: white;
+  padding: 3rem 0;
+}
+.regForm_block {
+  color: white !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 4rem 0;
+  border-radius: 30px;
+  background-color: #e19df9;
+}
+.regForm_info {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formInputSelect {
+  background-color: white;
+  height: 2.5rem;
+  border: 0.5px solid #00000030;
+  padding-left: 0.5rem;
+  border-radius: 10px !important;
+}
+.formBlock {
+  width: 90%;
+  margin: 0 auto;
+}
+.formBlockFile {
+  width: 90%;
+  margin: 0 auto;
+}
+.formBlock2 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formInp_label {
+  font-weight: 600;
+  margin-top: 1.4rem;
+}
+.formInp_labels {
+  font-weight: 600;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 100%;
+  background-color: #ffffff50;
+  color: white;
+  border-radius: 20px;
+  border: 2px dashed white;
+}
+#inpfile2 {
+  display: none;
+  background-color: aliceblue;
+}
+.label2 {
+  grid-column: 2/3;
+  grid-row: 6/8;
+}
+.formInput {
+  width: calc(100% - 0.5rem);
+  height: 2.5rem;
+  border: 0.5px solid #00000030;
+  padding-left: 0.5rem;
+  border-radius: 2px;
+  border-radius: 10px;
+}
+.formInput::-webkit-outer-spin-button,
+.formInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.secondForm_block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 90%;
+  margin-top: 3rem;
+}
+.secondForm_block > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+.seconForm_btn {
+  cursor: pointer;
+  margin-right: 1rem;
+  color: #3378c9;
+  text-decoration: underline;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.seconForm_btn > img {
+  margin-left: 1rem;
+  width: 0.9rem;
+}
+#inpfile {
+  display: none;
+}
+/* .thirdForm_block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin: 3rem auto;
+} */
+.fourForm_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.fourForm1 > h3,
+.fourForm2 > h3 {
+  margin-bottom: 1rem;
+}
+.fourForm1_checks,
+.fourForm2_checks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+.regCheck {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+.regBbtn {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.regBtnfalse {
+  background-color: #d9d9d9;
+  color: black;
+}
+.regBtntrue {
+  background-color: #8007ca;
+  color: white;
+}
+.formTextarea {
+  resize: none;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  height: 10rem;
+  border-radius: 20px;
+}
+
+.notFound_block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+.notFound_btn {
+  margin-top: 2rem;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px white solid;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.notFound_btn:hover {
+  background-color: #8007ca;
+  border: 1px transparent solid;
+}
+.notFound_img {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.regFormSucces {
+  position: fixed;
+  top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .regForm_block {
+    padding: 2rem 0;
+  }
+  .regForm_info {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .regCheck {
+    width: 90%;
+    justify-content: center;
+  }
+  .label2 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .regBbtn {
+    width: 15rem;
+  }
+  .notFound_img {
+    width: 15rem;
+  }
+}
