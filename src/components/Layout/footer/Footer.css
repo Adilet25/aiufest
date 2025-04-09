@@ -59,6 +59,9 @@
     grid-template-columns: repeat(1, 1fr);
     text-align:center;
   }
+  .footerSocial {
+    margin: 0rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -69,5 +72,8 @@
   .footerInfo {
     display: flex;
     flex-direction: column;
+  }
+  .footerSocial {
+    margin: 0 1rem;
   }
 }

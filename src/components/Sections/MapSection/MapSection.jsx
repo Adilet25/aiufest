@@ -1,7 +1,7 @@
 import rusi from "../../../assets/guest/Rusi.png";
 import rusi2 from "../../../assets/guest/Rusi2.png";
 import bravo from "../../../assets/guest/Bravo.png";
-import shuhrat from "../../../assets/guest/Shu.png";
+import shuhrat from "../../../assets/guest/Shu.jpg";
 import map from "../../../assets/map.png";
 
 import "./MapSection.css";
