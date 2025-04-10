@@ -23,13 +23,6 @@ const PartnerSection = () => {
       <div className="partnerBlock_img">
         <img loading="lazy" src={dodo} alt="error" className="parnterSwiper" />
         <img loading="lazy" src={bakai} alt="error" className="parnterSwiper" />
-        <img
-          loading="lazy"
-          src={maxi}
-          alt="error"
-          className="parnterSwiper"
-          id="maxi"
-        />
       </div>
       <h2 className="partnerBlock_title">Медиа Партнёры</h2>
       <div className="partnerBlock_img2">

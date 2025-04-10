@@ -1,5 +1,5 @@
 import rusi from "../../../assets/guest/Rusi.png";
-import rusi2 from "../../../assets/guest/Rusi2.png";
+import kan from "../../../assets/guest/Kan.png";
 import bravo from "../../../assets/guest/Bravo.png";
 import shuhrat from "../../../assets/guest/Shu.jpg";
 import map from "../../../assets/map.png";
@@ -16,8 +16,8 @@ import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/module
 const slide_images = [
   { image: rusi, text: "Руслан Асанкан",id:1 },
   { image: shuhrat, text: "Шухрат Якубов",id:2 },
-  { image: rusi2, text: "Руслан Айдар",id:3 },
-  { image: bravo, text: "'Браво' Шоу балет",id:4 }
+  { image: kan, text: "Каныкей",id:3 },
+  { image: bravo, text: "Шоу балет 'Браво'",id:4 }
 ];
 
 const MapSection = () => {
