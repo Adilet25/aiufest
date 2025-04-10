@@ -67,7 +67,7 @@ const MapSection = () => {
 
         <div className="tourFork_blockParent">
           <p className="tourText_small">Карта локаций</p>
-          <img src={map} alt="error" className="mapImg" />
+            <img src={map} alt="error" className="mapImg" />
         </div>
       </div>
     </div>

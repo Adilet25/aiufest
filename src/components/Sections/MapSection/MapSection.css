@@ -30,11 +30,19 @@
   font-size: 2rem;
   letter-spacing: 2px;
 }
+.mapcon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
 .mapImg {
   border-radius: 20px;
-  width: 100%;
+  width: 90%;
   height: auto;
+  display: block;
 }
+
 .tourBlock_img {
   margin-bottom: 4rem;
 }
