@@ -1,6 +1,5 @@
 import el3 from "../../../assets/elements/el3.svg";
 import logo from "../../../assets/logo.svg";
-import mer from "../../../assets/partnerslogo/mer.png";
 import dodo from "../../../assets/partnerslogo/dodo.svg";
 import bakai from "../../../assets/partnerslogo/bakai.svg";
 
@@ -71,13 +70,6 @@ const MainSection = () => {
               Мероприятие проводится при поддержке
             </p>
             <div className="logobigb">
-              <img
-                loading="lazy"
-                src={mer}
-                alt="error"
-                className="logobigbb"
-                id="mer"
-              />
               <img
                 loading="lazy"
                 src={bakai}

@@ -92,14 +92,14 @@
   width: 10rem !important;
 }
 .logobigb {
-  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+	gap: 6rem;
   margin-bottom: 2rem;
 }
 .logobigbb {
-  width: 9rem;
+  width: 15rem;
 }
 .logobigbb2 {
   width: 9rem;
@@ -117,9 +117,7 @@
   width: 99vw;
   z-index: 1;
 }
-#dodo {
-  width: 10rem !important;
-}
+
 @media screen and (max-width: 1345px) {
   .firstMain_text {
     font-size: 2em;
@@ -134,14 +132,7 @@
     font-size: 0.7em;
   }
 }
-@media screen and (max-width: 1024px) {
-  .logobigbb {
-    width: 7rem;
-  }
-  .logobigbb2 {
-    width: 4rem;
-  }
-}
+
 @media screen and (max-width: 930px) {
   .secondBlock_sponsors > img {
     margin: 2rem;
@@ -159,12 +150,9 @@
     gap: 1rem;
   }
 
-  #dodo {
-    order: 3;
-  }
-  #mer {
-    order: 1;
-  }
+  .logobigbb{
+		width: 13rem;
+	}
   #bakai {
     order: 2;
   }

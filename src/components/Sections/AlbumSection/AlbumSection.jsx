@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 
 import "./AlbumSection.css";
-import slide_image_1 from "../../.../../../assets/albumcompress/img1-min.jpg";
+
+import slide_image_1 from "../../../assets/albumcompress/img1-min.jpg";
 import slide_image_2 from "../../../assets/albumcompress/img2-min.jpg";
 import slide_image_3 from "../../../assets/albumcompress/img3-min.jpg";
 import slide_image_4 from "../../../assets/albumcompress/img4-min.jpg";
@@ -28,6 +28,7 @@ import slide_image_18 from "../../../assets/albumcompress/img18-min.jpg";
 import slide_image_19 from "../../../assets/albumcompress/img19-min.jpg";
 import slide_image_20 from "../../../assets/albumcompress/img20-min.jpg";
 import slide_image_21 from "../../../assets/albumcompress/img21-min.jpg";
+
 const slide_images = [
   slide_image_1,
   slide_image_2,
@@ -48,14 +49,15 @@ const slide_images = [
   slide_image_18,
   slide_image_19,
   slide_image_20,
-  slide_image_21
-
+  slide_image_21,
 ];
 
 function AlbumSection() {
   return (
     <div className="container">
       <h1 className="heading">Фото альбом прошлого года</h1>
+
+      {/* Swiper Component */}
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -68,30 +70,29 @@ function AlbumSection() {
           depth: 100,
           modifier: 2.5,
         }}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-          clickable: true,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[EffectCoverflow, Navigation]}
         className="swiper_container"
       >
         {slide_images.map((image, index) => (
-          <SwiperSlide key={index} className={`swiper-slide-${index + 1}`}>
+          <SwiperSlide key={index}>
             <img src={image} alt={`slide_image_${index + 1}`} />
           </SwiperSlide>
         ))}
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className="swiper-pagination"></div>
-        </div>
       </Swiper>
+
+      {/* Navigation Buttons (outside Swiper) */}
+      <div className="slider-controler">
+        <div className="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div className="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+      </div>
     </div>
   );
 }

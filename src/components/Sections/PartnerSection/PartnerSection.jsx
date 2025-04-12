@@ -3,7 +3,6 @@
 import "swiper/css";
 import dodo from "../../../assets/partnerslogo/dodo.svg";
 import bakai from "../../../assets/partnerslogo/bakai.svg";
-import maxi from "../../../assets/partnerslogo/maxi.svg";
 import aki from "../../../assets/partnerslogo/aki.svg";
 import kut from "../../../assets/partnerslogo/kut.svg";
 import kaktus from "../../../assets/partnerslogo/kaktusw.svg";

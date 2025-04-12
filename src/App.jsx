@@ -1,7 +1,8 @@
-import React from "react";
-import Layout from "./components/Layout/Layout";
+import { defineCustomElements } from "ionicons/dist/loader";
 import MainRoutes from "./MainRoutes";
 import AuthContextProvider from "./context/AuthContextProvider";
+
+defineCustomElements(window);
 
 const App = () => {
   return (
