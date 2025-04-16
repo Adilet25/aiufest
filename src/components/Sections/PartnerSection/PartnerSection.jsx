@@ -1,8 +1,8 @@
 // import { Autoplay } from "swiper/modules";
 // import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import dodo from "../../../assets/partnerslogo/dodo.svg";
-import bakai from "../../../assets/partnerslogo/bakai.svg";
+import dodo from "../../../assets/partnerslogo/dodo.png";
+import cola from "../../../assets/partnerslogo/cola.png";
 import aki from "../../../assets/partnerslogo/aki.svg";
 import kut from "../../../assets/partnerslogo/kut.svg";
 import kaktus from "../../../assets/partnerslogo/kaktusw.svg";
@@ -12,16 +12,16 @@ import "./PartnerSectionn.css";
 const PartnerSection = () => {
   return (
     <div className="partnerBlock">
-      <div className="partnerRank_block">
+      {/* <div className="partnerRank_block">
         <div className="partnerRank1">
           <h2 className="partnerBlock_title">Генеральный спонсор</h2>
           <img loading="lazy" src={bakai} alt="" className="partSec bigSpon" />
         </div>{" "}
-      </div>
+      </div> */}
       <h2 className="partnerBlock_title">Партнёры</h2>
       <div className="partnerBlock_img">
-        <img loading="lazy" src={dodo} alt="error" className="parnterSwiper" />
-        <img loading="lazy" src={bakai} alt="error" className="parnterSwiper" />
+        <img loading="lazy" src={dodo} alt="error" className="parnterSwiper dodImg" />
+        <img loading="lazy" src={cola} alt="error" className="parnterSwiper " />
       </div>
       <h2 className="partnerBlock_title">Медиа Партнёры</h2>
       <div className="partnerBlock_img2">

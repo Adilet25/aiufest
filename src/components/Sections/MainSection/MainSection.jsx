@@ -1,7 +1,7 @@
 import el3 from "../../../assets/elements/el3.svg";
 import logo from "../../../assets/logo.svg";
-import dodo from "../../../assets/partnerslogo/dodo.svg";
-import bakai from "../../../assets/partnerslogo/bakai.svg";
+import dodo from "../../../assets/partnerslogo/dodo.png";
+import cola from "../../../assets/partnerslogo/cola.png";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -72,7 +72,7 @@ const MainSection = () => {
             <div className="logobigb">
               <img
                 loading="lazy"
-                src={bakai}
+                src={cola}
                 alt=""
                 className="logobigbb"
                 id="bakai"
@@ -81,7 +81,7 @@ const MainSection = () => {
                 loading="lazy"
                 src={dodo}
                 alt=""
-                className="logobigbb"
+                className="logobigbb dodImgMain"
                 id="dodo"
               />
             </div>

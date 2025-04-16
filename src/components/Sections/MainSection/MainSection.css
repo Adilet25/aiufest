@@ -118,6 +118,11 @@
   z-index: 1;
 }
 
+
+.dodImgMain{
+  border-radius: 15px;
+
+}
 @media screen and (max-width: 1345px) {
   .firstMain_text {
     font-size: 2em;
