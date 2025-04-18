@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 
 import "./AlbumSection.css";
+import arrow from "../../../assets/arrow.svg"
 
 import slide_image_1 from "../../../assets/albumcompress/img1-min.jpg";
 import slide_image_2 from "../../../assets/albumcompress/img2-min.jpg";
@@ -86,12 +87,12 @@ function AlbumSection() {
 
       {/* Navigation Buttons (outside Swiper) */}
       <div className="slider-controler">
-        <div className="swiper-button-prev slider-arrow">
-          <ion-icon name="arrow-back-outline"></ion-icon>
-        </div>
-        <div className="swiper-button-next slider-arrow">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
+      <div className="swiper-button-prev slider-arrow">
+                <img src={arrow} alt="" />
+              </div>
+              <div className="swiper-button-next slider-arrow">
+              <img src={arrow} alt="" style={{transform:'rotate(3.142rad)'}} />
+              </div>
       </div>
     </div>
   );

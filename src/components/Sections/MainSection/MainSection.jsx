@@ -67,38 +67,6 @@ const MainSection = () => {
               className="mainBgColor"
             />
           </div>
-          <div className="logobigm">
-            <p className="secondBlock_text">
-              Мероприятие проводится при поддержке
-            </p>
-            <div className="logobigb">
-            <img
-                loading="lazy"
-                src={obank}
-                alt=""
-                className="logobigbb obank"
-              />
-              <img
-              loading="lazy"
-              src={demir}
-              alt=""
-              className="logobigbb demir "
-            />
-              <img
-                loading="lazy"
-                src={cola}
-                alt=""
-                className="logobigbb"
-              />
-              <img
-                loading="lazy"
-                src={dodo}
-                alt=""
-                className="logobigbb dodImgMain"
-                id="dodo"
-              />
-            </div>
-          </div>
           <div className="secondBlock_org">
             <p className="secondBlock_text">Организаторы</p>
             <div className="secondBlock_sponsors">

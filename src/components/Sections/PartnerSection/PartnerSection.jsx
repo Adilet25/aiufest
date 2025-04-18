@@ -21,7 +21,7 @@ const PartnerSection = () => {
           <img loading="lazy" src={demir} alt="" className="partSec bigSpon" />
         </div>{" "}
       </div>
-      <h2 className="partnerBlock_title">Партнёры</h2>
+      <h2 className="partnerBlock_title">Мероприятие проводится при поддержке</h2>
       <div className="partnerBlock_img">
         <img loading="lazy" src={obank} alt="error" className="parnterSwiper demirimg" />
         <img loading="lazy" src={demir} alt="error" className="parnterSwiper demirimg" />

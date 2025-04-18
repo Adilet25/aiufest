@@ -4,6 +4,7 @@ import kan from "../../../assets/guest/Kan.png";
 import bravo from "../../../assets/guest/Bravo.png";
 import shuhrat from "../../../assets/guest/Shu.jpg";
 import map from "../../../assets/map.png";
+import arrow from "../../../assets/arrow.svg"
 
 import "./MapSection.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -62,10 +63,10 @@ const MapSection = () => {
             ))}
             <div className="slider-controler">
               <div className="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
+                <img src={arrow} alt="" />
               </div>
               <div className="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
+              <img src={arrow} alt="" style={{transform:'rotate(3.142rad)'}} />
               </div>
             </div>
           </Swiper>
