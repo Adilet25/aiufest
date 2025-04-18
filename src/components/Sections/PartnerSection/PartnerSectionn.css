@@ -72,7 +72,8 @@
   margin: 0 auto;
 }
 .bigSpon {
-  width: 15rem;
+  margin-top: 2rem;
+  width: 24rem;
 }
 .dodImg{
   border-radius: 15px;
@@ -80,7 +81,7 @@
 .partnerBlock_img {
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
   align-items: center;
   justify-items: center;
@@ -97,6 +98,9 @@
   align-items: center;
   justify-items: center;
 }
+.demirimg{
+  width: 20rem !important;
+}
 @media screen and (max-width: 1024px) {
   .partnerBlock_imgs > img {
     width: 5rem;
@@ -104,7 +108,6 @@
   .partnerBlock_img {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    width: 70%;
     margin: 0 auto;
     margin-bottom: 5rem !important;
   }
@@ -122,7 +125,7 @@
 }
 @media screen and (max-width: 768px) {
   .partnerBlock_img {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .partnerBlock_img2 {
     grid-template-columns: repeat(2, 1fr);
@@ -138,13 +141,9 @@
     width: 9rem;
     margin: 0 auto;
   }
-  #maxi {
-    grid-column: 1/3;
-    grid-row: 2/2;
-  }
-  .partnerBlock_img>img{
-    width:9rem;
-  }
+
+ 
+
 }
 @media screen and (max-width: 425px) {
   .partnerBlock_img {
@@ -164,5 +163,8 @@
   #maxi {
     grid-column: 1/1;
     grid-row: 3/3;
+  }
+  .bigSpon{
+    width: 17rem;
   }
 }

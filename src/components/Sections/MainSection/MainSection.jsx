@@ -2,6 +2,8 @@ import el3 from "../../../assets/elements/el3.svg";
 import logo from "../../../assets/logo.svg";
 import dodo from "../../../assets/partnerslogo/dodo.png";
 import cola from "../../../assets/partnerslogo/cola.png";
+import demir from "../../../assets/partnerslogo/demir.png"
+import obank from "../../../assets/partnerslogo/obank.png"
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -70,12 +72,23 @@ const MainSection = () => {
               Мероприятие проводится при поддержке
             </p>
             <div className="logobigb">
+            <img
+                loading="lazy"
+                src={obank}
+                alt=""
+                className="logobigbb obank"
+              />
+              <img
+              loading="lazy"
+              src={demir}
+              alt=""
+              className="logobigbb demir "
+            />
               <img
                 loading="lazy"
                 src={cola}
                 alt=""
                 className="logobigbb"
-                id="bakai"
               />
               <img
                 loading="lazy"

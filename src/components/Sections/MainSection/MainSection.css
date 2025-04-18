@@ -49,6 +49,7 @@
   z-index: 2;
   position: relative;
   margin-bottom: 7rem;
+  margin-top: 3rem;
 }
 .secondBlock_text {
   margin-bottom: 2rem;
@@ -92,17 +93,21 @@
   width: 10rem !important;
 }
 .logobigb {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  justify-content: center;
 	gap: 6rem;
   margin-bottom: 2rem;
 }
 .logobigbb {
+  margin: 0 auto;
   width: 15rem;
 }
 .logobigbb2 {
   width: 9rem;
+}
+.obank,.demir{
+  width: 20rem;
 }
 .logobigm {
   display: flex;
@@ -136,6 +141,9 @@
   #firstDate {
     font-size: 0.7em;
   }
+  .logobigb {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 930px) {
@@ -152,14 +160,14 @@
   .logobigb {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .logobigbb{
 		width: 13rem;
 	}
-  #bakai {
-    order: 2;
+  .demir{
+    width: 20rem;
   }
   .logobigbb,
   .logobigbb2 {
