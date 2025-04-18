@@ -56,8 +56,11 @@ const MapSection = () => {
             {slide_images.map((item) => (
               <div key={item.id} className="sliderMap">
                 <SwiperSlide className="swiper-slideers">
-                  <img src={item.image} alt={`sliderimg`} />
+                  <img src={item.image} alt={`sliderimg`} className="sliderImg" />
+                  <div className="slidertextblock">
+
                   <p className="slider-text">{item.text}</p>
+                  </div>
                 </SwiperSlide>
               </div>
             ))}
